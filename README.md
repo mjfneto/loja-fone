@@ -14,3 +14,9 @@ Para definição de títulos.
 `<a href=""></a>`- anchor
 Usada para definir a navegação do usuário.
 
+# CSS
+
+É uma linguagem de estilo, significa que tem as seguintes responsabilidades:
+
+- estilização;
+- 
