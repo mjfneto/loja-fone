@@ -39,3 +39,40 @@ Ela é necessária quando é preciso "ultrapassar" outra regra.
 ### **Por que saber isso é útil?**
 
 Porque usar o `inherit` para estabelecer relações de herança pode deixar seu código mais limpo e com menos código.
+
+## 003.002 font-family é top
+
+A propriedade `font-family` define a família de fonte do(s) elemento(s) selecionado.
+
+```css
+h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+```
+
+A propriedade `font-family: Arial, Helvetica, sans-serif`, com esses valores, especifica que:
+
+- se o usuário não tiver Arial na máquina dele, o navegador pode usar Helvetica;
+
+- E, por fim, se o usuário não tiver Helvetica, o navegador usará sans-serif.
+
+```markdown
+Serifas são aqueles pequenos traços e prolongamentos nas hastes das letras, visto com frequência em fontes como a Times New Roman, que portanto é uma fonte Serifada.
+
+Desta forma as fontes chamadas Sans-Serif, ou seja, sem serifa, são aquelas que não possuem esses traços e alongamentos. Um exemplo é a Arial.
+```
+
+É sempre bom se resguardar contra a ausência de fontes no computador do usuário, fazendo a seleção de outras fontes, como no exemplo acima.
+
+```markdown
+Você pode verificar fontes proprietárias no [Google Fonts](fonts.google.com)
+```
+
+O Google Fonts também oferece mais opções de fontes, com diferentes estilos de uma mesma fonte. Mas, cuidado, muitos estilos no seu documento comprometerão a performance do seu site.
+
+É recomendado usar até três estilos de fonte, porque é um limite para o começo de efeitos no carregamento da página.
+
+Na aba "EMBED" do Google Fonts você pode encontrar a tag HTML link, que contém as suas especificações da fonte escolhida, e a propriedade `font-family` já com os respectivos valores.
+
+Use esse link no seu arquivo HTML, dentro da tag `<head></head>`, antes dos outros links `reset.css` e `header.css`.
