@@ -1,6 +1,4 @@
-
-
-header {
+.header-store {
     background-color: #e24647;
     color: #fff;
     overflow: hidden;
@@ -8,13 +6,13 @@ header {
     padding: 55px 60px 95px;
 }
 
-h1 {
+.title {
     font-size: 40px;
     font-family: Arial, Helvetica, 'Roboto', sans-serif;
     float: left;
 }
 
-nav {
+.navigation {
     font-size: 21px;
     font-family: 'Segoe UI', 'Roboto', sans-serif;
     float: right;
@@ -24,7 +22,7 @@ nav {
     clear: right;
 }
 
-a {
+.action {
     text-decoration: none;
     color: inherit;
     margin-right: 60px;

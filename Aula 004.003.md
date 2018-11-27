@@ -41,3 +41,17 @@ A propriedade `display` permite que se defina a maneira como determinado element
 
   - Na prática, usamos o valor `inline-block` quando queremos definir um valor para a propriedade `width`. Sob certar circunstâncias, alguns navegadores ignoram a propriedade `width` para elementos inline, então definindo `display: inline-block` para tais elementos você forçará o navegador a reconhecer o valor definido para a propriedade `width`.
 
+## Arrumando nosso pequeno CSS
+
+Padrão para refatoração do nosso layout:
+
+- Troca dos seletores de tag por seletores de classe.
+
+- Um contêiner, um elemento pai, terá a nomeação de classe em duas palavras. Exemplo: `class="header-store"`
+
+- Os componentes de todo contêiner terão a nomeação com apenas uma palavra. Exemplo: `class="title"`
+
+```markdown
+Observação: não pode haver dois atributos `class` dentro de uma tag de um elemento.
+```
+
