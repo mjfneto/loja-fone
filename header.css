@@ -4,6 +4,8 @@ header {
     background-color: #e24647;
     color: #fff;
     overflow: hidden;
+    margin: 0 115px;
+    padding: 55px 60px 95px;
 }
 
 h1 {
