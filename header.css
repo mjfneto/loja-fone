@@ -20,7 +20,16 @@ nav {
     float: right;
 }
 
+.navigation-last {
+    clear: right;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+    margin-right: 60px;
+}
+
+.last {
+    margin-right: 0;
 }
