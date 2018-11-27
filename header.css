@@ -1,4 +1,8 @@
-
+div {
+    margin: auto 0;
+    width: 100%;
+    padding: 118px 0;
+}
 
 header {
     background-color: #e24647;
@@ -26,6 +30,10 @@ nav > a {
     margin-right: 60px;
 }
 
+main {
+    margin: 0 115px;
+}
+
 .btn-black {
     background-color: #252c41;
     border: 2px solid #252c41;
@@ -34,7 +42,6 @@ nav > a {
 }
 
 .btn {
-    display: inline-block;
     vertical-align: middle;
     font-family: Arial, Helvetica, 'Roboto', sans-serif;
     font-size: 20px;
