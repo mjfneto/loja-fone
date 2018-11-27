@@ -75,4 +75,30 @@ O Google Fonts também oferece mais opções de fontes, com diferentes estilos d
 
 Na aba "EMBED" do Google Fonts você pode encontrar a tag HTML link, que contém as suas especificações da fonte escolhida, e a propriedade `font-family` já com os respectivos valores.
 
-Use esse link no seu arquivo HTML, dentro da tag `<head></head>`, antes dos outros links `reset.css` e `header.css`.
+Use esse link no seu arquivo HTML, dentro da tag `<head></head>`, **antes** dos outros links `reset.css` e `header.css`.
+
+## 003.003 Float de uma forma feliz
+
+"Float" significa "flutuar".
+
+```markdown
+A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu contêiner, onde _textos e elementos em linha_ irão se posicionar ao seu redor.
+```
+
+Disponível em: [propriedade float CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/float), em MDN reference.
+
+A propriedade `float` cria um novo contexto onde o elemento que a contém "flutua" acima do seu contexto normal, da página, liberando espaço para outros elementos vizinhos. Ela foi criada para satisfazer a necessidade de páginas em que imagens que acompanhavam textos podiam flutuar ao lado deles, sem que o conteúdo textual ficasse desequilibrado, ou seja, sem que ele ficasse nem muito longe, nem muito coberto, exatamente na medida em relação à imagem.
+
+```markdown
+Olhar os layouts de páginas de jornal pode ajudar nesse entendimento.
+```
+
+Contudo, outro comportamento esperado dentro deste contexto é que o elemento vizinho não é encoberto pelo elemento float. Este elemento nunca esconderá um texto.
+
+Um elemento float também tem um dimensionamento diferente em seu novo contexto. O tamanho dele passa a ser o tamanho do seu conteúdo, porque seu contexto não é mais o contexto do browser, é o contexto float, onde ele flutua. **O elemento pai ignora os elementos filhos** quando estes se encontram em contextos float.
+
+No exemplo dado em aula, ambos os elementos contidos nos elementos pai `<header></header>` estão em contextos float, o que faz com que o pai perca qualquer referência de conteúdo para dimensionamento, e simplesmentes não apareça. Mas há uma propriedade que define o "recálculo" desse dimensionamento para o elemento pai.
+
+A propriedade `overflow` define o que deve ser feito quando o conteúdo de um elemento é grande demais para caber no seu contexto de formatação em bloco. Especificar qualquer valor para essa propriedade que não seja `visible` (o valor padrão) cria um novo contexto de formatação em bloco.
+
+A propriedade `overflow: hidden` serve para esconder um elemento, mas, diante da situação do exemplo, ela faz o recálculo do contexto para o elemento pai. Com o valor `hidden`, sem definição de altura e largura de elementos filhos, porque estes estão em um contexto diferente do seu, o elemento pai precisa ir buscar uma referência de dimensionamento em outro contexto. Assim, ele segue para o contexto float, exatamente onde seus filhos estão. O efeito é que o elemento pai "reaparece" e acompanha o novo contexto de dimensionamento dos elementos filhos, ajustando-se exatamente ao conteúdo deles e sem perder sua característica de elemento bloco. O elemento pai sai do contexto normal, entra no contexto float, e não mais ignora os filhos.

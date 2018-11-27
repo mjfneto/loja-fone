@@ -3,16 +3,19 @@
 header {
     background-color: #e24647;
     color: #fff;
+    overflow: hidden;
 }
 
 h1 {
     font-size: 40px;
     font-family: Arial, Helvetica, 'Roboto', sans-serif;
+    float: left;
 }
 
 nav {
     font-size: 21px;
     font-family: 'Segoe UI', 'Roboto', sans-serif;
+    float: right;
 }
 
 a {
