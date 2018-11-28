@@ -1,8 +1,12 @@
-# Pare de chutar e aprenda como funciona o `display: inline`
+# Posts sobre propriedades de posicionamento CSS
+
+Disponíveis em: [https://medium.com/collabcode/pare-de-chutar-e-aprenda-as-propriedades-css-de-posicionamento-603154655121]()
+
+## Pare de chutar e aprenda como funciona o `display: inline`
 
 Disponível em: [https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-4ccb7b77371d]()
 
-## `Display: inline;`
+### `Display: inline;`
 
 Todo elemento em contexto inline tem o *comportamento de uma palavra*.
 
@@ -22,5 +26,59 @@ Uma maneira utilizada para remover os espaços tentando deixar o código um pouc
  --><li class="example-item example-item_second">Segundo</li><!--
  --><li class="example-item example-item_third">Terceiro</li>
   </ul>
+```
+
+## Pare de chutar e aprenda como funciona o `display: block`
+
+### A ajuda na manutenção que o valor `auto` dá
+
+A utilização do valor `auto` com a propriedade margin, por exemplo, facilita bastante a manutenção do código. Diferentemente da utilização de valores em porcentagem, com o valor `auto` o cálculo da margem é feito automatica, sendo mais adaptativo.
+
+Utilizar porcentagens garante um efeito responsivo à largura dos elementos, mas não facilita a manutenção se quisermos mudar a largura para outro valor:
+
+```css
+.example {
+    color: #FFF;
+    text-align: center;
+}
+    .example-item {
+        display: block;
+        width: 33.333%;
+        height: 150px;
+    }
+    .example-item_first {
+        background-color: #FAA116;
+    }
+    .example-item_second {
+        background-color: #57C7C3;
+        margin-left: 66.667%;
+    }
+    .example-item_third {
+        background-color: #3B97D3;
+    }
+```
+
+    O código abaixo tem o mesmo efeito que o de cima, mas sua vantagem é a facilitação da manutenção:
+
+```css
+.example {
+    color: #FFF;
+    text-align: center;
+}
+    .example-item {
+        display: block;
+        width: 33.333%;
+        height: 150px;
+    }
+    .example-item_first {
+        background-color: #FAA116;
+    }
+    .example-item_second {
+        background-color: #57C7C3;
+        margin-left: auto; // Só trocamos 66.667% por auto
+    }
+    .example-item_third {
+        background-color: #3B97D3;
+    }
 ```
 
