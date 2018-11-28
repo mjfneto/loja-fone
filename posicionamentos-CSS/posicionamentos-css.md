@@ -58,7 +58,7 @@ Utilizar porcentagens garante um efeito responsivo à largura dos elementos, mas
     }
 ```
 
-    O código abaixo tem o mesmo efeito que o de cima, mas sua vantagem é a facilitação da manutenção:
+O código abaixo tem o mesmo efeito que o de cima, mas sua vantagem é a facilitação da manutenção:
 
 ```css
 .example {
@@ -82,3 +82,49 @@ Utilizar porcentagens garante um efeito responsivo à largura dos elementos, mas
     }
 ```
 
+## Pare de chutar e aprenda como funciona o `display: inline-block`
+
+Com display: inline-block nós conseguimos definir uma largura (width) e altura (height) da mesma forma que conseguimos com o display: block, esse é o único comportamento que o inline-block herda do block.
+
+Também conseguimos deixar um elemento do lado do outro, vulgo mesma linha,da mesma forma que fazemos com o display: inline, mas esse não é o único comportamento que o inline-block herda do inline.
+
+Quando um elemento é definido como display: inline-block ele também ganha o comportamento de uma palavra, esse é o segundo comportamento que herdamos do display: inline. Vamos alterar um pouco o nosso CSS e HTML para entender um pouco melhor o que eu quero dizer com comportamento de uma palavra.
+
+### Pai com `text-align: justify` e pseudo-elemento
+
+O comportamento do justify, é justificar todas as linhas menos a última?
+
+Como temos apenas uma linha, ela é a primeira e também a última, por isso que ela não está justificada. Para resolver esse problema precisamos adicionar uma última linha e fazer com que ela não apareça para o usuário.
+Felizmente conseguimos fazer isso apenas com CSS, utilizando o seletor de pseudo-element `:after`.
+
+É isso aí conseguimos adicionar texto pelo CSS -- só faça isso se o texto que você for adicionar, é apenas um atrativo visual. Conteúdo tem que ficar no HTML.
+
+Agora precisamos que esse último elemento que adicionamos com o :after, seja também a última linha. Bom, para fazermos isso, precisamos definir a largura dele como 100% (width: 100%) e por segurança deixá-lo com a altura zerada (height: 0). Também precisamos alterar o display dele para inline-block porque o padrão dele é inline -- lembre-se que quando um elemento é display: inline nós não conseguimos definir largura (width) e nem altura (height) para ele.
+
+```css
+.example {
+    color: #FFF;
+    text-align: justify;
+}
+.example:after {
+    content: '';
+    color: red;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+    .example-item {
+        width: 25%;
+        height: 150px;
+        display: inline-block;
+    }
+    .example-item_first {
+        background-color: #FAA116;
+    }
+    .example-item_second {
+        background-color: #57C7C3;
+    }
+    .example-item_third {
+        background-color: #3B97D3;
+    }
+```
