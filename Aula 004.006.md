@@ -179,3 +179,7 @@ Um elemento contêiner pode conter todos os elementos semânticos do nosso layou
 ```
 
 Agora, a tag `<div></div>` contêiner possui todos os elementos da nossa store.
+
+## 004.006 Desafio você a estudar
+
+Ler posts sobre as propriedades de posicionamento no site medium.com e fazer o que é sugerido neles.
