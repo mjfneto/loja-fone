@@ -139,3 +139,43 @@ A propriedade `transform: translateX()` pode mover o elemento segundo seu eixo. 
     transform: translateX(-50%) translateY(-50%);
 }
 ```
+
+## 004.005 Criando o contêiner
+
+Um elemento contêiner pode conter todos os elementos semânticos do nosso layout, porque ele é irrisório na leitura de leitores de texto. Portanto, ele pode ser usado para centralizar nossos outros elementos no centro.
+
+- Cria-se uma nova pasta para os elementos container, que também recebem uma nomeação com duas palavras. Exemplo: `class="container-store"`
+
+```html
+<body>
+    <div class="container-store">
+        <header class="header-store">
+            <h1 class="title">LOGO</h1>
+
+            <nav class="navigation">
+                <a class="action" href="http://collabcode.training">Produtos</a>
+                <a class="action" href="http://collabcode.training">Serviços</a>
+                <a class="action last" href="http://collabcode.training">Carrinho (10)</a>
+            </nav>
+        </header>
+
+        <a class="action button-store" href="/comprar.html">Adicionar no carrinho</a>
+        <a class="action button-store" href="/comprar.html">Comprar</a>
+    </div>
+</body>
+</html>
+```
+
+```css
+.container-store {
+    background-color: #e24647;
+    width: 80%;
+    padding: 55px 60px 95px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+```
+
+Agora, a tag `<div></div>` contêiner possui todos os elementos da nossa store.
