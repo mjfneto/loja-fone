@@ -1,0 +1,21 @@
+.elementExample {
+ width: 200px;
+ height: 200px;
+ line-height: 200px;
+ color: #FFF;
+ text-transform: uppercase;
+ text-align: center;
+ cursor: pointer;
+ position: relative; /* movemos essa propriedade pra cá, ela estava no seletor abaixo */
+}
+.elementExample_first {
+ background-color: #B558DD;
+ top: 200px;
+}
+.elementExample_last {
+ background-color: #C0392B;
+}
+/* Criamos esse seletor */
+.elementExample_isActive {
+    z-index: 1;
+}

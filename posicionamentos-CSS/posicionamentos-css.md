@@ -143,3 +143,18 @@ Mas quando o pai não tem largura ou altura definida, ele se preocupa em levar e
 ### Como funciona a propriedade clear
 
 A propriedade clear é utilizada para limpar o contexto caso tenha um elemento flutuando ao lado esquerdo (left), direito (right) ou ambos (both).
+
+## Pare de chutar e aprenda como funciona a `position: static` e `position: relative`
+
+Junto com a propriedade `position` podemos utilizar mais 4 propriedades: `top`, `right`, `bottom` e `left`.
+
+Sem `position` definida, o browser deixa o valor padrão que é `static`, e o `static` é exatamente algo que não se move, algo totalmente parado sendo assim não adianta nós tentarmos utilizar as propriedades: `top`, `right`, `bottom` e `left`.
+
+### A propriedade `z-index`
+
+![z-index](https://cdn-images-1.medium.com/max/1000/1*FtQBdhqLsh_bgFP9AmjS-g.png)
+
+Uma coisa interessante sobre essa propriedade é que ela só funciona se a propriedade position do elemento tiver um valor diferente de static.
+
+O valor padrão do z-index é 0.
+
