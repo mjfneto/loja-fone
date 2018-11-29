@@ -15,3 +15,8 @@ Há seletores de classe que podem contem regras de estilização gerais para ele
 ### Variação com uso do seletor "e" (`.`)
 
 Para especificar ainda mais a relação entre a classe mais geral e a classe mais particular, é aconselhável usar a seguinte seleção de classes no CSS `.button-store.-cta`. Isso determina a relação entre os dois, e, mais importante, que a regra de estilo vale somente para casos onde há ocorrência das duas atribuições no HTML. Isso evita que uma classe como `-second` seja usada em outros tipos de elementos, se isso não for o desejado.
+
+## 005.003 Seletores de class são felizes
+
+Seletores de classe bem definidos são boas práticas para refatoração de código. Facilitam a manutenção dele.
+
