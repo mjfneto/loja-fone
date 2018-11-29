@@ -128,3 +128,18 @@ Agora precisamos que esse último elemento que adicionamos com o :after, seja ta
         background-color: #3B97D3;
     }
 ```
+
+## Pare de chutar e aprenda como funciona o float: left e float:right e sua trupe
+
+Toda vez que tivermos um <img> ou um elemento definido com display: inline ou display: inline-block após qualquer tag definida com a propriedade float: left ou float: right, esses elementos se encaixam ao lado do elemento que está flutuando. Se <img> ou o elemento com display: inline ou display: inline-block não couber ao lado do elemento que está flutuando, ele fica embaixo do elemento que contém a propriedade float.
+
+Se colocarmos elementos com a propriedade float: left e float: right a partir desse momento esses elementos ganham um novo contexto, ou seja, eles não estarão no mesmo contexto de seu pai (tag <article>).
+
+### A propriedade `overflow: hidden`
+
+A propriedade overflow com o valor hidden, tem o poder de esconder qualquer elemento filho que ultrapasse o tamanho do seu pai.
+Mas quando o pai não tem largura ou altura definida, ele se preocupa em levar em consideração a altura e largura dos filhos, ainda que estes estejam no novo contexto.
+
+### Como funciona a propriedade clear
+
+A propriedade clear é utilizada para limpar o contexto caso tenha um elemento flutuando ao lado esquerdo (left), direito (right) ou ambos (both).
