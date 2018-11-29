@@ -1,0 +1,46 @@
+.description-store {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.description-list {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: left;
+    float: right;
+}
+
+.description-title {
+    margin-bottom: 75px;
+    font-size: 25px;
+}
+
+.item-1, .item-2 {
+    margin-bottom: 30px;
+}
+
+.item-3 {
+    margin-bottom: 100px;
+}
+
+.item-3 > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+[class*="col-"] {
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+[class*="th-"], [class*="data-"] {
+    display: block;
+}
+
+.col-2 {
+    margin-left: 80px;
+}
+
+.th-1, .data-1 {
+    margin-bottom: 25px;
+}
