@@ -20,3 +20,29 @@ Para especificar ainda mais a relação entre a classe mais geral e a classe mai
 
 Seletores de classe bem definidos são boas práticas para refatoração de código. Facilitam a manutenção dele.
 
+## 005.004 O show do HTML com Emmet
+
+Quando houver uma área de um layout que guarda elementos diferentes níveis e sub-níveis de descrição de determinada coisa, uma tag chamada "description list" `<dl></dl>` pode ser útil, pois cumpre exatamente o propósito de representar uma lista descritiva. Delimita uma lista de grupos de termos (especificados com o elemento `<dt></dt>`) e descrições (dados pelos elementos `<dd></dd>`). Todas as tags `<dl></dl>`, `<dt></dt>` e `<dd></dd>`, por padrão, têm contexto block.
+
+## Criando elementos e fazendo atribuições eficientemente com o plugin Emmet
+
+```emmet
+dl>dt>dd*3
+```
+
+```html
+<dl>
+    <dt>
+        <dd></dd>
+        <dd></dd>
+        <dd></dd>
+    </dt>
+```
+
+```emmet
+button.button-store-second{...}
+```
+
+```html
+<button class="button-store-second">Adicionar ao carrinho</button>
+```
