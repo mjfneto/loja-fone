@@ -28,7 +28,7 @@
     color: inherit;
 }
 
-[class*="col-"] {
+[class*="col-"], .item-4, .item-5 {
     display: inline-block;
     margin-bottom: 70px;
 }
