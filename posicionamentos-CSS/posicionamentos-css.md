@@ -158,3 +158,39 @@ Uma coisa interessante sobre essa propriedade é que ela só funciona se a propr
 
 O valor padrão do z-index é 0.
 
+## Pare de chutar e aprenda como funciona a `position: absolute`
+
+Um elemento com `position: absolute` ficará posicionado em relação ao elemento pai posicionado mais próximo.
+
+Se o pai de um elemento posicionado absolutamente estiver posicionado estaticamente, como no fluxo normal, ele ignorará o filho.
+
+Sendo assim, o filho sem uma referência se baseia no body, pode ser centrelizado em relação a ele:
+
+```css
+.elementExample_second {
+  background-color: #00b894;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+```
+
+Contudo, se o elemento pai estiver posicionado relativamente, ele está num contexto onde pode ser referência de posicionamento para seu filho. O elemento filho, então, passa a ser centralizado em relação ao elemento pai, limitando-se à área acima do seu dimensionamento interno.
+
+```css
+.elementExample_last {
+  background-color: #d63031;
+  position: relative;
+}
+.elementExample-internal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #00cec9;
+}
+```
