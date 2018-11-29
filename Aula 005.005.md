@@ -46,3 +46,17 @@ button.button-store-second{...}
 ```html
 <button class="button-store-second">Adicionar ao carrinho</button>
 ```
+
+## 005.005 Desafios
+
+### Desafio básico
+
+Estilizar os elementos descritivos do fone de ouvido segundo o layout.
+
+### Desafio Intermediário
+
+Posicionar os botões um ao lado do outro.
+
+### Desafio Avançado
+
+Colocar a imagem ao lado do `<dl></dl>`.
