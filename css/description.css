@@ -1,18 +1,25 @@
+.container-middle {
+    position: relative;
+    top: 100px;
+}
+
 .description-store {
-    margin-top: 100px;
+    max-width: 100%;
     overflow: hidden;
 }
 
 .description-list {
+    width: 50%;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #fff;
     text-align: left;
-    float: right;
+    float: left;
 }
 
 .description-title {
     margin-bottom: 75px;
     font-size: 25px;
+    line-height: 30px;
 }
 
 .item-1, .item-2 {
