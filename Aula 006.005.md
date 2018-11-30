@@ -51,3 +51,18 @@ Outro detalhe importante é a utilização de tags específicas para priorizaç�
 
 ## 006.003 inherit é muito top
 
+## 006.004 o valor de saber como funciona as coisas
+
+## 006.005 Desafios
+
+### Básico
+
+Colocar as estrelas de rating
+
+## Intermediário
+
+Colocas o elemento "busca" no header.
+
+### Avançado
+
+Posicionar os botões com o wrap do produto.
