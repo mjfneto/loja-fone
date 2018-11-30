@@ -1,0 +1,8 @@
+.image-store {
+    width: 50%;
+    float: left;
+}
+
+.responsive-image {
+    max-width: 100%;
+}
