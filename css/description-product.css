@@ -5,12 +5,30 @@
 
 .description-product > .title {
     font-size: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.description-product > .title::before {
+    content: '♡';
+    position: absolute;
+    font-size: 45px;
+    top: -5px;
+    left: -70px;
+    color: black;
+    transform: scaleX(1.25);
 }
 
 .description-product > .item {
     font-size: 20px;
     margin-bottom: 28px;
+}
+
+.description-product > .item.-rating {
+    color: #252c41;
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: 5px;
 }
 
 .description-product > .item.-info {
