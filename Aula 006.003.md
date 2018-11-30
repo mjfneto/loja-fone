@@ -48,3 +48,6 @@ Outro detalhe importante é a utilização de tags específicas para priorizaç�
 2. Especificar `text-align: justify`.
 
 3. Utilizar `float: left` no elemento que tem a tag de destaque.
+
+## 006.003 inherit é muito top
+
