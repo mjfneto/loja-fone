@@ -30,3 +30,8 @@
     background-color: inherit;
     text-decoration: inherit;
 }
+
+.button-container {
+    display: inline-block;
+    width: 100%;
+}
