@@ -3,6 +3,7 @@
     overflow: hidden;
     margin-bottom: 138px;
     padding-left: 60px;
+    text-align: right;
 }
 
 .header-store > .title {
@@ -10,6 +11,25 @@
     font-family: Arial, Helvetica, 'Roboto', sans-serif;
     float: left;
     text-transform: uppercase;
+}
+
+.header-store input {
+    background-color: inherit;
+    display: inline-block;
+    text-align: left;
+    margin: 8px 0;
+    height: 25px;
+    width: 358px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-right: 65px;
+}
+
+.header-store input::placeholder {
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, 'Roboto', sans-serif;
+    opacity: 1;
 }
 
 .header-store > .navigation {
