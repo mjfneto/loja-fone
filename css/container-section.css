@@ -1,0 +1,11 @@
+.container-section {
+  display: inline-block;
+}
+
+.container-section > .heart {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 9px;
+  cursor: pointer;
+  margin-right: 47px;
+}

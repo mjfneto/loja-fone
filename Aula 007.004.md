@@ -11,3 +11,7 @@ Adicionar cursor: pointer às estrelas, ao botão "Adicionar no carrinho" e e à
 Adicionar o seletor `:hover` ao primeiro botão para que fique com `background-color: blue` e `color: #fff` quando o cursor estiver acima dele.
 
 Adicionar o mesmo seletor para o segundo botão com `color: #e24647` e `background-color: #fff`.
+
+## Avançado
+
+Adicionar e posicionar o ícone do coração ao lado do título do produto.
