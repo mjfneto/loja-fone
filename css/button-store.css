@@ -1,32 +1,33 @@
 .button-store {
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: #252c41;
-    font-size: 20px;
-    line-height: 60px;
-    color: #fff;
-    font-family: Arial, Helvetica, 'Roboto', sans-serif;
-    width: 200px;
-    height: 60px;
-    margin-right: 0;
-    text-align: center;
-    text-decoration: none;
-    border: none;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #252c41;
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+  font-family: Arial, Helvetica, "Roboto", sans-serif;
+  width: 200px;
+  height: 60px;
+  margin-right: 0;
+  text-align: center;
+  text-decoration: none;
+  border: none;
 }
 
 .button-store.-second {
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin-right: 38px;
-    line-height: 55.5px;
-    width: 218px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-right: 38px;
+  line-height: 55.5px;
+  width: 218px;
+  cursor: pointer;
 }
 
 .button-store > button,
 .button-store > a {
-    color: inherit;
-    font-size: inherit;
-    border: none;
-    background-color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: inherit;
+  text-decoration: inherit;
 }
