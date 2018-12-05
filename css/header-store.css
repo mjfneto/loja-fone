@@ -38,13 +38,30 @@
   text-decoration: none;
   color: inherit;
   margin-right: 60px;
-}
-
-.header-store .action:hover {
-  padding-bottom: 8px;
-  border-bottom: 1px solid #fff;
+  position: relative;
 }
 
 .header-store .action.-last {
   margin-right: 0;
+}
+
+.header-store .action:hover::before {
+  content: "";
+  padding-top: 9px;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  top: 100%;
+  animation-name: faux-border;
+  animation-direction: normal;
+  animation-duration: 0.75s;
+}
+
+@keyframes faux-border {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
