@@ -42,3 +42,27 @@ A propriedade `cursor: pointer` cria um significante que indica o efeito de inte
 ### Pseudo-classe
 
 Seletor que existe somente diante de um evento.
+
+## 008.003 Coração no lugar certo
+
+A aula tratou basicamente do posicionamento da imagem com o coração fazendo uso da propriedade `position: absolute`.
+
+## 008.004 Desafios
+
+### Básico
+
+Fazer interação com a imagem do coração, e com as imagens da estrelas.
+
+- Meu plano de ação: Fazer com que elas cresçam um pouco configurando a pseudo-classe `:hover` com `transform: scale(0.9)`.
+
+### Intermediário
+
+Adicionar interação aos elementos da `<nav>`.
+
+- Meu plano de ação: pseudo-classe `:hover` com propriedade `border-bottom: 1px solid #fff`.
+
+### Avançado
+
+Melhorar a interação dos elementos da `<nav>`. Fazer com que a linha abaixo deles surja da esquerda quando houver `:hover`.
+
+Meu plano de ação: com a propriedade `transform`. Ver qual especificação usar.
