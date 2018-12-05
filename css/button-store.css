@@ -13,6 +13,18 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
+
+  transition: all 300ms linear;
+}
+
+.button-store:hover,
+.button-store:focus {
+  background-color: #fff;
+  color: #e24647;
+}
+
+.button-store:active {
+  transform: scale(0.9);
 }
 
 .button-store.-second {
@@ -21,6 +33,12 @@
   margin-right: 38px;
   line-height: 55.5px;
   width: 218px;
+}
+
+.button-store.-second:hover,
+.button-store.-second:focus {
+  background-color: #fff;
+  color: #e24647;
 }
 
 .button-store > button,
