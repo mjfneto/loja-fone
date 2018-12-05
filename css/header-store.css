@@ -13,12 +13,6 @@
   cursor: pointer;
 }
 
-.header-store > .navigation {
-  font-size: 21px;
-  font-family: "Segoe UI", "Roboto", sans-serif;
-  float: right;
-}
-
 .header-store [type="search"] {
   background: transparent;
   border: none;
@@ -34,10 +28,21 @@
   color: #fff;
 }
 
+.header-store > .navigation {
+  font-size: 21px;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  float: right;
+}
+
 .header-store .action {
   text-decoration: none;
   color: inherit;
   margin-right: 60px;
+}
+
+.header-store .action:hover {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #fff;
 }
 
 .header-store .action.-last {
