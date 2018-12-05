@@ -21,6 +21,11 @@
   cursor: pointer;
 }
 
+.description-product .-heart > img:hover,
+.description-product .-star > img:hover {
+  transform: scale(1.15);
+}
+
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
