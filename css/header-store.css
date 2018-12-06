@@ -28,6 +28,7 @@
   width: 358px;
   margin-right: 65px;
   padding: 8px;
+  vertical-align: bottom;
 }
 
 .header-store [type="search"]::placeholder {
@@ -35,9 +36,16 @@
 }
 
 .header-store .action {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   margin-right: 60px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid transparent;
+}
+
+.header-store .action:hover {
+  border-bottom-color: #fff;
 }
 
 .header-store .action.-last {
