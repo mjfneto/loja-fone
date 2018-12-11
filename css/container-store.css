@@ -1,9 +1,18 @@
 .container-store {
+  box-sizing: border-box;
   background-color: #e24647;
   width: 90%;
+  max-width: 1330px;
   padding: 55px 60px 165px 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 1208px) {
+  .container-store {
+    position: static;
+    transform: none;
+  }
 }
