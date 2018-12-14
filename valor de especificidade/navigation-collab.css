@@ -1,0 +1,19 @@
+nav#navigation-collab.navigation-collab {
+    /* 1 + 100 + 10 = 11 */
+    color: red;
+}
+
+.navigation-collab .action {
+    /* 10 + 10 = 20 */
+    color: inherit;
+}
+
+.navigation-collab {
+    /* 10 */
+    color: blue;
+}
+
+nav#navigation-collab:hover {
+    /* 1 + 100 + 10 = 111 */
+    color: magenta;
+}
