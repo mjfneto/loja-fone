@@ -13,3 +13,17 @@ seletor de class / pseudo-seletores = 10
 seletor de tag = 1
 
 **Evitar ao máximo o uso do `!important`.**
+
+## 011.006 Desafios
+
+### Básico
+
+Cuidar do respiro entre o conteúdo principal e o cabeçalho responsivamente.
+
+## Intermediário
+
+Fazer o background em gradiente.
+
+## Avançado
+
+Encontrar uma resposta, ou solução, para o problema da visualização em modelo responsivo por outros navegadores, como o Chrome, por exemplo.
