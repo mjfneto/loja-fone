@@ -23,3 +23,12 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 560px) {
+    .photo-product {
+        height: auto;
+    }
+    .photo-product > img {
+        max-width: 100%;
+    }
+}
