@@ -19,3 +19,16 @@ API são recursos do browser que são acessados através de uma linguagem de pro
 
 Evento é qualquer ocorrência no browser.
 
+## 006 "Desafios"
+
+### Básico
+
+Selecionar o botão "Adicionar no carrinho" e "logar" ele no console.
+
+### Intermediário
+
+Adicionar um ouvinte de evento (click) que invoca uma função que exibe um alert("aê").
+
+### Avançado
+
+Modificar o ouvinte de evento (click) para que invoque uma função que mude o texto do elemento `<a>` "Carrinho (10)" para "Carrinho (11)".
