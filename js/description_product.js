@@ -18,4 +18,6 @@ function handleClick() {
 
 const $AddToCart = document.querySelector(".-second");
 
-console.log($AddToCart);
+$AddToCart.addEventListener("click", function () {
+    alert("Aê!");
+});
