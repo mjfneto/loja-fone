@@ -14,3 +14,8 @@ const $heart = window.document.querySelector(".-heart");
 ## 004 "JavaScript e API do Browser"
 
 API são recursos do browser que são acessados através de uma linguagem de programação (JavaScript, por exemplo). Assim se dá a comunicação com o browser.
+
+## 005 "addEventListener é top top top"
+
+Evento é qualquer ocorrência no browser.
+
