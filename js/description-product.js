@@ -15,9 +15,3 @@ $heart.addEventListener("click", handleClick);
 function handleClick() {
     console.log("aê");
 };
-
-const $AddToCart = document.querySelector(".-second");
-
-$AddToCart.addEventListener("click", function () {
-    alert("Aê!");
-});

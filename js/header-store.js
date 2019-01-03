@@ -1,0 +1,1 @@
+const $actionLast = document.getElementsByClassName("navigation")[0].lastElementChild;
