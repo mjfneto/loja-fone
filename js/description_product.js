@@ -10,8 +10,8 @@ Com o clique do usuário, mostrar um aviso na tela. OK
 
 const $heart = window.document.querySelector(".-heart");
 
-$heart.addEventListener("click", handleClick);
+$heart.addEventListener("mouseup", handleClick);
 
 function handleClick() {
-    console.log("aê");
+    $heart.classList.add('-active');
 };
