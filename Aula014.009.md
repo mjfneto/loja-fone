@@ -81,3 +81,17 @@ var b = 10;
 console.log(`Quinze é ${a + b} e não ${2 * a + b}.`);
 // "Quinze é 15 e não 20."
 ```
+
+## 009 Desafios
+
+### Básico
+
+Tentar arrumar o "bug" do elemento "-heart". Fazer com a cor de fundo branca não "ultrapasse" as linhas da imagem do coração.
+
+### Intermediário
+
+Selecionar as estrelas, fazendo com que após a ocorrência dos eventos, elas fiquem sem preenchimento.
+
+### Avançado
+
+Fazer com que a estrela alvo do evento seja referência para o preenchimento das que estão à esquerda.
