@@ -8,3 +8,5 @@
 
 ## 004 "Como funciona uma lista"
 
+## 005 "this e função anônima são muito felizes"
+
