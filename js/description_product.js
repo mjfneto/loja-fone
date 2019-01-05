@@ -16,19 +16,29 @@ function handleClick() {
     $heart.classList.toggle('-active');
 };
 
-const $star = document.querySelector(".-star");
+const $starContainer = document.querySelector(".-star");
 
-$star.addEventListener("click", handleStars);
+const $star = Array.prototype.slice.call(document.querySelectorAll('[src*="star"]'));
 
-function handleStars() {
-    let attrText = event.target.getAttribute("src");
-    let target = event.target;
-    if (attrText.includes("-active")) {
-        target.removeAttribute("src");
-        target.setAttribute("src", "img/star.png");
-    }
-    else {
-        target.removeAttribute("src");
-        target.setAttribute("src", "img/star-active.png");
-    }
+for (var icon of $star) {
+    icon.addEventListener("click", handleStars);
 };
+
+function handleStars(e) {
+    $star.forEach(function (item, index) {
+        let targetSrcText = e.target.getAttribute("src");
+        if (!targetSrcText.includes("-active")) {
+            let srcText = item.getAttribute("src");
+            if ((index <= $star.indexOf(e.target)) && ((!srcText.includes("-active")) || (!srcText.includes("-active")))) {
+                item.setAttribute("src", "img/star-active.png");
+            }
+        }
+        else {
+            if (index > $star.indexOf(e.target)) {
+                item.setAttribute("src", "img/star.png");
+            }
+        }
+    });
+};
+
+
