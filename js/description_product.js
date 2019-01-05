@@ -8,10 +8,17 @@ Com o clique do usuário, mostrar um aviso na tela. OK
 
 */
 
-const $heart = window.document.querySelector(".-heart");
+const $heart = document.querySelector(".-heart");
+const $firstStar = document.querySelector(".star");
 
 $heart.addEventListener("click", handleClick);
+$firstStar.addEventListener("click", handleClickFirstStar);
 
 function handleClick() {
     $heart.classList.toggle('-active');
+};
+
+
+function handleClickFirstStar() {
+    $firstStar.classList.toggle("-active");
 };
