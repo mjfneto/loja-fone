@@ -33,3 +33,7 @@ Em um evento, `this` se refere ao elemento que recebeu o evento.
 Métodos, como `call()`, e `apply()` podem referir `this` a qualquer objeto.
 
 [What is this?](https://www.w3schools.com/js/js_this.asp), na W3 Schools.
+
+## 007 Desafios
+
+Revisitando o desafio avançado da aula 014.
