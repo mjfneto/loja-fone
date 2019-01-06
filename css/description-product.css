@@ -1,6 +1,7 @@
 .description-product {
   font-family: "Roboto", sans-serif;
   color: #fff;
+  position: relative;
 }
 
 .description-product > .title {
@@ -115,6 +116,13 @@
     margin-right: 10px;
   }
 
+  .description-product > .item.-heart {
+    position: static;
+    transform: scale(1.2);
+    float: right;
+    margin: 5% 25% 0 0;
+  }
+
   .description-product > .item.-number {
     line-height: 26px;
   }
@@ -124,5 +132,17 @@
   .description-product {
     width: 90%;
     min-width: auto;
+  }
+
+  .description-product > .item.-heart {
+    position: static;
+    float: right;
+    margin: 0 10% 0 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .description-product > .item.-heart {
+    margin: 0 2.5% 0 0;
   }
 }
