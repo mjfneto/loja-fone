@@ -98,12 +98,15 @@
     position: absolute;
     top: 0;
     left: 0;
+    transform: translateX(-88%);
     background-color: #fff;
   }
   .header-store [type="search"]::placeholder {
     color: #000;
   }
-}
+  .header-store .-active[type="search"]{
+    transform: translateX(0);
+  }
 
 @media (max-width: 530px) {
   .header-store .action {
