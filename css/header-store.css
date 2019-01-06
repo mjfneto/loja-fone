@@ -95,7 +95,13 @@
     padding-right: 30px;
   }
   .header-store [type="search"] {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+  .header-store [type="search"]::placeholder {
+    color: #000;
   }
 }
 
