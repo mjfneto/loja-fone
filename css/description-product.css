@@ -110,6 +110,11 @@
     text-align: center;
   }
 
+  .description-product > .item.-heart {
+    left: auto;
+    transform: none;
+  }
+
   .description-product > .item.-star {
     float: left;
     margin-right: 10px;
@@ -124,5 +129,11 @@
   .description-product {
     width: 90%;
     min-width: auto;
+  }
+}
+
+@media (max-width: 475px) {
+  .description-product > .item.-heart {
+    position: static;
   }
 }
