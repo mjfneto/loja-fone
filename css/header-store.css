@@ -31,10 +31,6 @@
   vertical-align: bottom;
 }
 
-.header-store [type="search"]::placeholder {
-  color: #fff;
-}
-
 .header-store .action {
   display: inline-block;
   text-decoration: none;
@@ -100,11 +96,9 @@
     left: 0;
     transform: translateX(-88%);
     background-color: #fff;
-  }
-  .header-store [type="search"]::placeholder {
     color: #000;
   }
-  .header-store .-active[type="search"]{
+  .header-store .-active{
     transform: translateX(0);
   }
 
