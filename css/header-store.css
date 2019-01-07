@@ -19,18 +19,6 @@
   float: right;
 }
 
-.header-store [type="search"] {
-  background: transparent;
-  border: none;
-  color: inherit;
-  border-bottom: 1px solid #fff;
-  font-size: 20px;
-  width: 358px;
-  margin-right: 65px;
-  padding: 8px;
-  vertical-align: bottom;
-}
-
 .header-store .action {
   display: inline-block;
   text-decoration: none;
@@ -89,19 +77,6 @@
   .header-store {
     padding-left: 30px;
     padding-right: 30px;
-  }
-  .header-store [type="search"] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(-88%);
-    background-color: #fff;
-    color: #000;
-    transition: transform 200ms linear;
-  }
-  .header-store .-active[type='search'] {
-    transition: transform 600ms cubic-bezier(0,0,.96,1.26);
-    transform: translateX(0);
   }
 
 @media (max-width: 530px) {
