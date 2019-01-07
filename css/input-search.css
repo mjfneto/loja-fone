@@ -29,7 +29,7 @@
     top: 0;
     left: 0;
     transform: translateX(calc(-100% + 40px));
-    transition: transform 200ms cubic-bezier(0, 0, 0.96, 1.26);
+    transition: transform 200ms linear;
   }
   .input-search.-active {
     transition: transform 200ms linear;
