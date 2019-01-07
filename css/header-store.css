@@ -19,6 +19,18 @@
   float: right;
 }
 
+.header-store .item.-searchbox {
+  display: inline-block;
+}
+
+.header-store .icon {
+  display: none;
+}
+
+.header-store .icon.-active {
+  display: none;
+}
+
 .header-store [type="search"] {
   background: transparent;
   border: none;
@@ -29,6 +41,10 @@
   margin-right: 65px;
   padding: 8px;
   vertical-align: bottom;
+}
+
+.header-store [type="search"]::placeholder {
+  color: #fff;
 }
 
 .header-store .action {
@@ -90,18 +106,43 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  .header-store [type="search"] {
+  .header-store .item.-searchbox {
     position: absolute;
-    top: 0;
+    top: 8px;
     left: 0;
     transform: translateX(-88%);
-    background-color: #fff;
-    color: #000;
-    transition: transform 200ms linear;
+    transition: transform 600ms cubic-bezier(1,0,0,1);
   }
-  .header-store .-active[type='search'] {
-    transition: transform 600ms cubic-bezier(0,0,.96,1.26);
+  .header-store .item.-searchbox.-active {
+    transition: transform 600ms cubic-bezier(1,0,0,1);
     transform: translateX(0);
+  }
+  .header-store [type="search"] {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #fff;
+    color: #767676;
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .header-store [type='search']::placeholder {
+    color: #767676;
+  }
+  .header-store .icon {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+  .header-store .item.-searchbox.-active .icon.-active {
+    display: block;
+  }
+  .header-store .item.-searchbox.-active .icon {
+    display: none;
+  }
+  .header-store .icon:hover {
+    cursor: pointer;
   }
 
 @media (max-width: 530px) {
