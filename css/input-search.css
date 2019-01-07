@@ -51,6 +51,7 @@
     width: 40px;
     height: 41px;
     vertical-align: middle;
+    border-bottom-right-radius: 5px;
   }
   .input-search > .icon.-active {
     display: inline-block;
@@ -59,6 +60,6 @@
 
 @media (max-width: 400px) {
   .input-search > .content {
-    width: 85vw;
+    width: 70vw;
   }
 }
