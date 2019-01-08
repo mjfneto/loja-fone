@@ -1,0 +1,8 @@
+.skirt {
+  position: absolute;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 574px;
+  background-color: #fff;
+}

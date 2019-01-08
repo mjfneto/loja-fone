@@ -1,7 +1,7 @@
 .header-store {
   color: #fff;
   overflow: hidden;
-  margin-bottom: 138px;
+  margin-bottom: 101px;
   padding-left: 60px;
 }
 
@@ -17,6 +17,10 @@
   font-size: 21px;
   font-family: "Segoe UI", "Roboto", sans-serif;
   float: right;
+}
+
+.header-store .list {
+  display: inline-block;
 }
 
 .header-store .item.-menu {

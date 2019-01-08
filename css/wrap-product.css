@@ -3,6 +3,8 @@
   width: 554px;
   vertical-align: middle;
   position: relative;
+  float: right;
+  margin-top: 43px;
 }
 
 .wrap-product > .buttons {
