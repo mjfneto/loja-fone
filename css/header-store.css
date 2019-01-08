@@ -123,6 +123,7 @@
     left: 0;
     transform: translateX(-100%);
     transition: transform 100ms linear 400ms;
+    cursor: pointer;
   }
 
   .header-store .list {
@@ -142,6 +143,8 @@
   }
 
   .header-store .list.-active .item.-menu {
+    background-image: url("../img/close.svg");
+    background-size: 65%;
     transform: translateX(0);
     transition: none;
   }
