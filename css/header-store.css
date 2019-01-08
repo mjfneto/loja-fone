@@ -122,7 +122,19 @@
     top: 0;
     right: 0;
   }
-  .header-store .action {
-    display: none;
+
+  .header-store .list {
+    background-color: #fff;
+    color: #000;
+    width: 100vw;
+    padding: 40px 0 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  .header-store .item {
+    display: block;
   }
 }
