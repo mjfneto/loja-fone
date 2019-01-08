@@ -118,6 +118,9 @@
     height: 41px;
     text-indent: -9999px;
     margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .header-store .action {
     display: none;
