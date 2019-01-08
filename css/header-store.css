@@ -113,10 +113,7 @@
   .header-store .item.-menu {
     display: block;
     box-sizing: border-box;
-    background-image: url("../img/menu.svg");
-    background-repeat: no-repeat;
-    background-color: #fff;
-    background-position: center;
+    background: url("../img/menu.svg") #fff no-repeat center;
     width: 40px;
     height: 41px;
     text-indent: -9999px;
